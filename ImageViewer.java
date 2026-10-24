@@ -1,15 +1,10 @@
-import java.awt.Image;
 import javax.swing.*;
 
-public class ImageViewer {
+class DisplayImage {
     public static void main(String[] args) {
-        JFrame f = new JFrame("Image Viewer - PUST");
-
-        Image img = new ImageIcon("pustview.jpeg").getImage().getScaledInstance(1200, 700, Image.SCALE_SMOOTH);
-        f.add(new JLabel(new ImageIcon(img)));
-
-        f.setSize(1200, 700);
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JFrame f = new JFrame("Image");
+        f.add(new JLabel(new ImageIcon("tiger.jpg")));
+        f.setSize(1000, 500);
         f.setVisible(true);
     }
 }
